@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basics</title>
+    <style>
+        body {
+            /* "Pink? what’s wrong with pink?" - Using a vibrant Pink */
+            background-color: #FFC0CB; 
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+            font-size: 3em;
+            margin-top: 50px;
+        }
+
+        .shop-container {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            margin-top: 40px;
+            flex-wrap: wrap;
+        }
+
+        .shop-item {
+            text-align: center;
+        }
+
+        .shop-item img {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .shop-item a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            background-color: rgba(0, 0, 0, 0.2);
+            padding: 5px 10px;
+            border-radius: 4px;
+        }
+
+        .shop-item a:hover {
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+
+        hr {
+            border: 0;
+            height: 1px;
+            background: white;
+            margin: 40px 0 20px 0;
+            width: 100%;
+        }
+
+        footer {
+            text-align: right;
+            font-style: italic;
+            font-family: monospace;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>The Sigma Shop §</h1>
+
+    <div class="shop-container">
+        <div class="shop-item">
+            <img src="https://m.media-amazon.com/images/I/61Jw3GYvclL._AC_SX679_.jpg" alt="Online Store 1">
+            <br>
+            <a href="https://www.amazon.com.au/Italian-Brainrot-Tralalero-Chimpanzini-Bananini/dp/B0F8QV2LR1?th=1" target="_blank">Visit Amazon</a>
+        </div>
+
+        <div class="shop-item">
+            <img src="https://images.icon-icons.com/3041/PNG/512/ebay_logo_icon_189246.png" alt="Online Store 2">
+            <br>
+            <a href="https://www.ebay.com" target="_blank">Visit eBay</a>
+        </div>
+    </div>
+
+    <hr>
+
+    <footer>
+        &copy; Mattew
+    </footer>
+
+</body>
+</html>

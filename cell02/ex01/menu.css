@@ -1,0 +1,78 @@
+/* Basic Reset and Layout */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+}
+
+.navbar {
+    background-color: #00387b; /* SNCF-inspired Blue */
+    padding: 1rem;
+    color: white;
+    position: relative;
+}
+
+/* Hide the checkbox */
+.menu-toggle {
+    display: none;
+}
+
+/* Hamburger Icon Styling */
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    width: 30px;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.hamburger span {
+    height: 4px;
+    width: 100%;
+    background-color: white;
+    border-radius: 2px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Drop-down Menu Styling */
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-height: 0; /* Hidden by default */
+    overflow: hidden;
+    transition: max-height 0.4s ease-out;
+    background-color: #002a5c;
+}
+
+.menu li a {
+    display: block;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px solid #004699;
+}
+
+.menu li a:hover {
+    background-color: #0056b3;
+}
+
+/* --- THE INTERACTION (No JS) --- */
+
+/* 1. Expand the menu when checkbox is checked */
+.menu-toggle:checked ~ .menu {
+    max-height: 300px; /* Adjust based on content */
+}
+
+/* 2. Transform Hamburger into an 'X' */
+.menu-toggle:checked ~ .hamburger span:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+}
+
+.menu-toggle:checked ~ .hamburger span:nth-child(2) {
+    opacity: 0; /* Hide middle bar */
+}
+
+.menu-toggle:checked ~ .hamburger span:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+}
