@@ -4,7 +4,7 @@ body {
     justify-content: center;
     align-items: center;
     margin: 0;
-    transition: background-color 0.3s ease; /* Makes the transition smooth */
+    transition: background-color 0.3s ease; 
 }
 
 button {

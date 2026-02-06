@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>To do or not to do</title>
+    <style>
+        /* Center everything on the screen */
+        body {
+            margin: 0;
+            display: flex;
+            flex-direction: column; /* Stack elements vertically */
+            align-items: center;    /* Horizontal centering */
+            justify-content: center; /* Vertical centering */
+            min-height: 100vh;      /* Full viewport height */
+            background-color: #f4f4f9;
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            margin-bottom: 10px;
+        }
+
+        #ft_list { 
+            margin-top: 20px; 
+            border: 1px solid #ccc; 
+            background: white;
+            width: 350px; 
+            min-height: 50px;
+            border-radius: 8px;
+            overflow: hidden; /* Keeps corners rounded with child items */
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .todo-item { 
+            padding: 15px; 
+            border-bottom: 1px solid #eee; 
+            cursor: pointer; 
+            transition: background 0.2s;
+        }
+
+        .todo-item:last-child {
+            border-bottom: none;
+        }
+
+        .todo-item:hover { 
+            background: #fff5f5; /* Light red tint to suggest removal */
+        }
+
+        button { 
+            padding: 10px 25px; 
+            cursor: pointer; 
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>To-Do List</h1>
+    <button id="new_btn">New</button>
+    <div id="ft_list"></div>
+
+    <script src="todo.js"></script>
+</body>
+</html>

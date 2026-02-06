@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>It's over 9000</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        .calc-box {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        input[type="text"], select {
+            padding: 8px;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="calc-box">
+        <input type="text" id="left-val" placeholder="0">
+        
+        <select id="op">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+            <option value="%">%</option>
+        </select>
+        
+        <input type="text" id="right-val" placeholder="0">
+        
+        <input type="submit" id="submit-btn" value="Try me!">
+    </div>
+
+    <script src="calc.js"></script>
+</body>
+</html>

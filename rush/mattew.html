@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Professional Resume</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            position: relative;
+        }
+        /* Ensure sections have padding so the fixed nav doesn't cover content */
+        section {
+            padding: 100px 20px;
+            min-height: 100vh;
+        }
+        .hero-section {
+            background: linear-gradient(rgba(0, 123, 255, 0.7), rgba(0, 123, 255, 0.7)), url('assets/hero-bg.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .profile-img {
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            border: 5px solid white;
+            margin-bottom: 20px;
+        }
+
+    </style>
+</head>
+<body data-bs-spy="scroll" data-bs-target="#resumeNav">
+
+    <nav id="resumeNav" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow">
+        <div class="container">
+            <a class="navbar-brand" href="#">Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience & Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero-section">
+        <div class="container">
+            <img src="https://img2.pic.in.th/Mattew.jpg" alt="Profile Photo" class="rounded-circle profile-img">
+            <h1 class="display-3 fw-bold">Achiravit Vanasinchai</h1>
+            <p class="lead">AI engineering</p>
+            <div class="mt-4">
+                <a href="#experience" class="btn btn-outline-light btn-lg">View My Work</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Professional Experience & Skills</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <h4>Experience</h4>
+                    <ul>
+<div class="row">
+    <div class="col-md-7">
+        <h4 class="mb-4 text-primary">Experience</h4>
+        
+        <div class="mb-4">
+            <h5 class="fw-bold mb-1">Junior Web Developer (Intern)</h5>
+            <p class="text-muted small mb-2">TechVision Solutions | 2024 - Present</p>
+            <ul class="ps-3">
+                <li>Collaborated on the redesign of a corporate landing page, improving mobile responsiveness by 40%.</li>
+                <li>Utilized **Bootstrap 5** to build reusable UI components and ensure cross-browser compatibility.</li>
+                <li>Optimized website performance by streamlining CSS files and compressing image assets.</li>
+            </ul>
+        </div>
+
+        <div class="mb-4">
+            <h5 class="fw-bold mb-1">Freelance Web Designer</h5>
+            <p class="text-muted small mb-2">Remote / Project-Based | 2023 - 2024</p>
+            <ul class="ps-3">
+                <li>Developed custom one-page websites for local small businesses using HTML5 and CSS3.</li>
+                <li>Managed end-to-end site deployment, ensuring SEO best practices were followed.</li>
+                <li>Translated Figma mockups into pixel-perfect, interactive web pages.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="col-md-5">
+        <h4 class="mb-4 text-primary">Skills</h4>
+        
+        <div class="mb-3">
+            <h6 class="fw-bold">Frontend Development</h6>
+            <div class="d-flex flex-wrap gap-2">
+                <span class="badge rounded-pill bg-dark">HTML5</span>
+                <span class="badge rounded-pill bg-dark">CSS3</span>
+                <span class="badge rounded-pill bg-dark">JavaScript (ES6+)</span>
+                <span class="badge rounded-pill bg-dark">Bootstrap 5</span>
+            </div>
+        </div>
+
+        <div class="mb-3">
+            <h6 class="fw-bold">Tools & Design</h6>
+            <div class="d-flex flex-wrap gap-2">
+                <span class="badge rounded-pill bg-secondary">Git & GitHub</span>
+                <span class="badge rounded-pill bg-secondary">Figma</span>
+                <span class="badge rounded-pill bg-secondary">VS Code</span>
+                <span class="badge rounded-pill bg-secondary">Responsive Design</span>
+            </div>
+        </div>
+</ul>
+        <div class="mt-4 p-3 border rounded bg-white shadow-sm">
+            <h6 class="fw-bold">Certifications</h6>
+            <small class="text-muted d-block">Full-Stack Web Training (2025) (Mocking data)</small>
+            <small class="text-muted d-block">Responsive Web Design - FreeCodeCamp</small>
+        </div>
+    </div>
+</div>
+         
+        </div>
+    </section>
+
+    <section id="contact" class="text-center">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <p>I'm always open to new opportunities.</p>
+            <div class="mt-4">
+                <a href="mailto:mattew8468@gmail.com" class="btn btn-primary px-4 py-2 mx-2">Email Me</a>
+                <a href="https://www.linkedin.com/" class="btn btn-dark px-4 py-2 mx-2">LinkedIn</a>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <a href="landing.html" style="text-align: center;">back to start</a>
+</body>
+</html>
